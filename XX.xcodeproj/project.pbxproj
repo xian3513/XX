@@ -16,6 +16,11 @@
 		684464EE1A851461005ED126 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684464ED1A851461005ED126 /* ThirdViewController.m */; };
 		684464F41A8514A2005ED126 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684464F31A8514A2005ED126 /* SecondViewController.m */; };
 		684464F71A8514AE005ED126 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684464F61A8514AE005ED126 /* FirstViewController.m */; };
+		68B9F9011A889F2B00FED450 /* First.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B9F9001A889F2B00FED450 /* First.m */; };
+		68B9F9041A889F3B00FED450 /* Second.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B9F9031A889F3B00FED450 /* Second.m */; };
+		68B9F9071A889F4800FED450 /* Third.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B9F9061A889F4800FED450 /* Third.m */; };
+		68B9F90A1A889F9D00FED450 /* Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B9F9091A889F9D00FED450 /* Base.m */; };
+		68B9F90D1A88AB3B00FED450 /* NotepadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B9F90C1A88AB3B00FED450 /* NotepadViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,16 @@
 		684464F31A8514A2005ED126 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		684464F51A8514AE005ED126 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		684464F61A8514AE005ED126 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		68B9F8FF1A889F2B00FED450 /* First.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = First.h; sourceTree = "<group>"; };
+		68B9F9001A889F2B00FED450 /* First.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = First.m; sourceTree = "<group>"; };
+		68B9F9021A889F3B00FED450 /* Second.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Second.h; sourceTree = "<group>"; };
+		68B9F9031A889F3B00FED450 /* Second.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Second.m; sourceTree = "<group>"; };
+		68B9F9051A889F4800FED450 /* Third.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Third.h; sourceTree = "<group>"; };
+		68B9F9061A889F4800FED450 /* Third.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Third.m; sourceTree = "<group>"; };
+		68B9F9081A889F9D00FED450 /* Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base.h; sourceTree = "<group>"; };
+		68B9F9091A889F9D00FED450 /* Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base.m; sourceTree = "<group>"; };
+		68B9F90B1A88AB3B00FED450 /* NotepadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotepadViewController.h; sourceTree = "<group>"; };
+		68B9F90C1A88AB3B00FED450 /* NotepadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotepadViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,12 +143,9 @@
 		684464E91A851425005ED126 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				684464EC1A851461005ED126 /* ThirdViewController.h */,
-				684464ED1A851461005ED126 /* ThirdViewController.m */,
-				684464F21A8514A2005ED126 /* SecondViewController.h */,
-				684464F31A8514A2005ED126 /* SecondViewController.m */,
-				684464F51A8514AE005ED126 /* FirstViewController.h */,
-				684464F61A8514AE005ED126 /* FirstViewController.m */,
+				684464FA1A8518DD005ED126 /* First */,
+				684464F91A8518DA005ED126 /* Second */,
+				684464F81A8518D7005ED126 /* Third */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -149,8 +161,45 @@
 		684464EB1A85142B005ED126 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				68B9F8FF1A889F2B00FED450 /* First.h */,
+				68B9F9001A889F2B00FED450 /* First.m */,
+				68B9F9021A889F3B00FED450 /* Second.h */,
+				68B9F9031A889F3B00FED450 /* Second.m */,
+				68B9F9051A889F4800FED450 /* Third.h */,
+				68B9F9061A889F4800FED450 /* Third.m */,
+				68B9F9081A889F9D00FED450 /* Base.h */,
+				68B9F9091A889F9D00FED450 /* Base.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		684464F81A8518D7005ED126 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				684464EC1A851461005ED126 /* ThirdViewController.h */,
+				684464ED1A851461005ED126 /* ThirdViewController.m */,
+				68B9F90B1A88AB3B00FED450 /* NotepadViewController.h */,
+				68B9F90C1A88AB3B00FED450 /* NotepadViewController.m */,
+			);
+			name = Third;
+			sourceTree = "<group>";
+		};
+		684464F91A8518DA005ED126 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				684464F21A8514A2005ED126 /* SecondViewController.h */,
+				684464F31A8514A2005ED126 /* SecondViewController.m */,
+			);
+			name = Second;
+			sourceTree = "<group>";
+		};
+		684464FA1A8518DD005ED126 /* First */ = {
+			isa = PBXGroup;
+			children = (
+				684464F51A8514AE005ED126 /* FirstViewController.h */,
+				684464F61A8514AE005ED126 /* FirstViewController.m */,
+			);
+			name = First;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,9 +302,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68B9F9011A889F2B00FED450 /* First.m in Sources */,
 				684464F41A8514A2005ED126 /* SecondViewController.m in Sources */,
 				684464F71A8514AE005ED126 /* FirstViewController.m in Sources */,
 				684464C91A8511E0005ED126 /* AppDelegate.m in Sources */,
+				68B9F90D1A88AB3B00FED450 /* NotepadViewController.m in Sources */,
+				68B9F90A1A889F9D00FED450 /* Base.m in Sources */,
+				68B9F9041A889F3B00FED450 /* Second.m in Sources */,
+				68B9F9071A889F4800FED450 /* Third.m in Sources */,
 				684464EE1A851461005ED126 /* ThirdViewController.m in Sources */,
 				684464C61A8511E0005ED126 /* main.m in Sources */,
 			);
@@ -450,6 +504,7 @@
 				684464E51A8511E0005ED126 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		684464E61A8511E0005ED126 /* Build configuration list for PBXNativeTarget "XXTests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +513,7 @@
 				684464E81A8511E0005ED126 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

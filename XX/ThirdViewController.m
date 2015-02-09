@@ -7,16 +7,19 @@
 //
 
 #import "ThirdViewController.h"
-
+#import "NotepadViewController.h"
+#import "Third.h"
 @interface ThirdViewController ()
 
 @end
 
-@implementation ThirdViewController
+@implementation ThirdViewController {
+    Third *third;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self initData];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -24,6 +27,9 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+- (void)initData {
+    third  = [[Third alloc]init];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -32,27 +38,61 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
+
+  
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 1;
+
+    
+    return [third numberOfRows];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"userCell" forIndexPath:indexPath];
+    NSString *identifier = @"thirdCell";
+    if(indexPath.row == 0) {
+    identifier = @"userCell";
+    }
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
     
     // Configure the cell...
     
     return cell;
 }
 
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if(indexPath.row == 0) {
+        return nil;
+    }
+    return indexPath;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 
+    NSString *identifier = nil;
+    switch (indexPath.row) {
+            
+        case 1: {
+           
+            break;
+        }
+            
+        case 2: {
+            break;
+        }
+            
+        case 3: {
+            break;
+        }
+            
+        case 4: {
+            break;
+        }
+    }
+    UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:identifier];
+    [self.navigationController pushViewController:controller animated:YES];
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
