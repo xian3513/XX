@@ -10,10 +10,11 @@
 
 @interface Third : Base
 
-- (NSInteger)heightOfCell:(NSIndexPath *)indexPath;
+- (CGFloat)heightOfCell:(NSInteger *)row;
 
 - (NSInteger)numberOfRows;
 
 - (NSString *)textOfrow:(NSInteger)row;
 
+- (void)recordclicked:(NSInteger)row;
 @end

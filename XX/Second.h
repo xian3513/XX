@@ -10,10 +10,14 @@
 
 @interface Second : Base
 
+- (NSInteger)sectionOfView;
+
 - (NSInteger)heightOfCell:(NSInteger)row;
 
-- (NSInteger)numberOfRows;
+- (NSInteger)numberOfRows:(NSInteger)section;
 
-- (NSString *)textOfrow:(NSInteger)row;
+- (NSString *)textOfrow:(NSInteger)row section:(NSInteger)section;
+
+- (NSString *)titleOfSection:(NSInteger)section;
 
 @end

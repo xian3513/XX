@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  PushBaseViewController.h
 //  XX
 //
 //  Created by kt on 15/2/15.
@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface SecondViewController : UICollectionViewController
+#import "Factory.h"
+@interface PushBaseViewController : UIViewController
 
 @end

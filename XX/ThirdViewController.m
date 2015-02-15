@@ -49,13 +49,15 @@
     return [third numberOfRows];
 }
 
-
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return [third heightOfCell:indexPath.row];
+}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *identifier = @"thirdCell";
     if(indexPath.row == 0) {
     identifier = @"userCell";
     }
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     
     // Configure the cell...
     

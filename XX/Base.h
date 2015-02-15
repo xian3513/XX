@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h>
 @interface Base : NSObject
 //- (Base *)init:(NSInteger)count;
 @end

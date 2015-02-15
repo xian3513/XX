@@ -9,24 +9,62 @@
 #import "Third.h"
 
 @implementation Third {
-    NSMutableArray *data;
+    //NSMutableArray *data;
+    NSMutableArray *sequence;
+    NSMutableArray *recordClicknumber;
+    NSMutableDictionary *data;
 }
 
 - (Third *)init {
     if (self = [super init]) {
-        data = [[NSMutableArray alloc]initWithObjects:@"",@"",@"",@"",@"",@"", nil];
+        NSMutableArray *keys = [[NSMutableArray alloc]initWithCapacity:0];
+        for(int i=5;i>0;i--) {
+            [keys addObject:[NSNumber numberWithInteger:i]];
+        }
+        data = [[NSMutableDictionary alloc]initWithObjects:@[@"a",@"b",@"c",@"d",@"e"] forKeys:keys];
+        sequence = [[NSMutableArray alloc]initWithCapacity:data.count];
+        recordClicknumber = [[NSMutableArray alloc]initWithCapacity:data.count];
+        
     }
     return self;
 }
 
-- (NSInteger)heightOfCell:(NSIndexPath *)indexPath {
-    return 10;
+- (CGFloat)heightOfCell:(NSInteger *)row {
+    if (row == 0) {
+        return 120.0f;
+    } else {
+        return 30.0f;
+    }
 }
 - (NSInteger)numberOfRows {
-    return data.count;
+    NSArray *key = data.allKeys;
+    NSLog(@"keys %d",key.count);
+    return key.count;
 }
 
 - (NSString *)textOfrow:(NSInteger)row {
-    return [data objectAtIndex:row];
+    NSArray *key = [data allKeys];
+    return [data objectForKey:[key objectAtIndex:row]];
+}
+
+
+- (void)recordclicked:(NSInteger)row {
+    NSInteger number = [[recordClicknumber objectAtIndex:row]integerValue];
+    [recordClicknumber replaceObjectAtIndex:row withObject:[NSNumber numberWithInteger:number++]];
+}
+
+- (void)seq:(NSMutableArray *)arr {
+    
+    for(int i=0;i<arr.count;i++) {
+        NSInteger number1 = [[arr objectAtIndex:i]integerValue];
+        for(int j=i+1;j<arr.count;j++) {
+            NSInteger number2 = [[arr objectAtIndex:j]integerValue];
+            if(number2>number1) {
+                [arr exchangeObjectAtIndex:i withObjectAtIndex:j];
+                number1 = number2;
+            }
+        }
+    }
+    NSLog(@"%@",arr);
 }
 @end
