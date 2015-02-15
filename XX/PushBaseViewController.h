@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "Factory.h"
-@interface PushBaseViewController : UIViewController
+@interface PushBaseViewController : UIViewController {
+    NSInteger navheight;
+    NSInteger distance;
+    UIScrollView *scroll;
+}
+@property (nonatomic,readwrite) CGSize scrollContentSize;
+
 
 @end

@@ -14,6 +14,6 @@
 
 + (void)factoryForFirstViewController:(UIView *)modelView;
 
-+ (void)factoryForSecondViewController:(UIView *)modelView atIndex:(NSInteger)index WithItemName:(NSString *)name;
++ (UITextField *)factoryForSecondViewController:(UIView *)modelView atIndex:(NSInteger)index WithItemName:(NSString *)name;
 
 @end

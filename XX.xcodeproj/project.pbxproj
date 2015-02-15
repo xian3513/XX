@@ -177,14 +177,14 @@
 		684464EB1A85142B005ED126 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				68B9F9081A889F9D00FED450 /* Base.h */,
+				68B9F9091A889F9D00FED450 /* Base.m */,
 				68B9F8FF1A889F2B00FED450 /* First.h */,
 				68B9F9001A889F2B00FED450 /* First.m */,
 				68B9F9021A889F3B00FED450 /* Second.h */,
 				68B9F9031A889F3B00FED450 /* Second.m */,
 				68B9F9051A889F4800FED450 /* Third.h */,
 				68B9F9061A889F4800FED450 /* Third.m */,
-				68B9F9081A889F9D00FED450 /* Base.h */,
-				68B9F9091A889F9D00FED450 /* Base.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -192,10 +192,9 @@
 		684464F81A8518D7005ED126 /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				68C2817A1A90501700C26666 /* Detail */,
 				684464EC1A851461005ED126 /* ThirdViewController.h */,
 				684464ED1A851461005ED126 /* ThirdViewController.m */,
-				68B9F90B1A88AB3B00FED450 /* NotepadViewController.h */,
-				68B9F90C1A88AB3B00FED450 /* NotepadViewController.m */,
 			);
 			name = Third;
 			sourceTree = "<group>";
@@ -203,9 +202,9 @@
 		684464F91A8518DA005ED126 /* Second */ = {
 			isa = PBXGroup;
 			children = (
-				68C281701A904DDE00C26666 /* Push */,
 				68C281651A90291100C26666 /* SecondViewController.h */,
 				68C281661A90291100C26666 /* SecondViewController.m */,
+				68C281701A904DDE00C26666 /* Push */,
 			);
 			name = Second;
 			sourceTree = "<group>";
@@ -241,6 +240,15 @@
 				68C281781A904E5E00C26666 /* RecruitmentViewController.m */,
 			);
 			name = Push;
+			sourceTree = "<group>";
+		};
+		68C2817A1A90501700C26666 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				68B9F90B1A88AB3B00FED450 /* NotepadViewController.h */,
+				68B9F90C1A88AB3B00FED450 /* NotepadViewController.m */,
+			);
+			name = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

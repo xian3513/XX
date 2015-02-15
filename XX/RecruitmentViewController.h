@@ -9,5 +9,5 @@
 #import "PushBaseViewController.h"
 
 @interface RecruitmentViewController : PushBaseViewController
-
+- (id)init;
 @end

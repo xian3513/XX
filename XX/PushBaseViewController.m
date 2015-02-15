@@ -14,6 +14,17 @@
 
 @implementation PushBaseViewController
 
+- (id)init {
+    if(self = [super init]) {
+     navheight = 66;
+        distance = 5;
+           }
+    return self;
+}
+
+- (void)setScrollContentSize:(CGSize)scrollContentSize {
+    scroll.contentSize = scrollContentSize;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
