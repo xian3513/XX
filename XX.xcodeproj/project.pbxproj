@@ -193,8 +193,6 @@
 			isa = PBXGroup;
 			children = (
 				68C2817A1A90501700C26666 /* Detail */,
-				684464EC1A851461005ED126 /* ThirdViewController.h */,
-				684464ED1A851461005ED126 /* ThirdViewController.m */,
 			);
 			name = Third;
 			sourceTree = "<group>";
@@ -245,10 +243,20 @@
 		68C2817A1A90501700C26666 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				684464EC1A851461005ED126 /* ThirdViewController.h */,
+				684464ED1A851461005ED126 /* ThirdViewController.m */,
+				68C2817B1A90855700C26666 /* Items */,
 				68B9F90B1A88AB3B00FED450 /* NotepadViewController.h */,
 				68B9F90C1A88AB3B00FED450 /* NotepadViewController.m */,
 			);
 			name = Detail;
+			sourceTree = "<group>";
+		};
+		68C2817B1A90855700C26666 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Items;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

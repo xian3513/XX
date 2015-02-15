@@ -113,19 +113,19 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5SC-0v-n8u">
-                                            <rect key="frame" x="140" y="60" width="80" height="30"/>
+                                            <rect key="frame" x="140" y="50" width="80" height="30"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tq9-UH-S9g">
-                                            <rect key="frame" x="140" y="90" width="80" height="30"/>
+                                            <rect key="frame" x="140" y="80" width="80" height="30"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1f-8o-5WH">
-                                            <rect key="frame" x="140" y="30" width="80" height="30"/>
+                                            <rect key="frame" x="140" y="20" width="80" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="80" id="fg7-4h-zWV"/>
                                                 <constraint firstAttribute="height" constant="30" id="jMj-Km-XdM"/>
@@ -135,7 +135,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.99215686270000003" green="0.63921568630000003" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstItem="nWU-hd-bnZ" firstAttribute="top" secondItem="pPf-yR-Bee" secondAttribute="top" constant="25" id="9aF-kF-Rey"/>
                                         <constraint firstItem="5SC-0v-n8u" firstAttribute="height" secondItem="R1f-8o-5WH" secondAttribute="height" id="E8F-q2-eKy"/>
@@ -148,9 +148,10 @@
                                         <constraint firstItem="nWU-hd-bnZ" firstAttribute="leading" secondItem="pPf-yR-Bee" secondAttribute="leading" constant="30" id="dYI-dC-Yrz"/>
                                         <constraint firstItem="tq9-UH-S9g" firstAttribute="leading" secondItem="nWU-hd-bnZ" secondAttribute="trailing" constant="30" id="qJh-mB-AVF"/>
                                         <constraint firstItem="5SC-0v-n8u" firstAttribute="top" secondItem="R1f-8o-5WH" secondAttribute="bottom" id="rao-Mk-9OK"/>
-                                        <constraint firstItem="R1f-8o-5WH" firstAttribute="top" secondItem="pPf-yR-Bee" secondAttribute="top" constant="30" id="xxE-2C-O6x"/>
+                                        <constraint firstItem="R1f-8o-5WH" firstAttribute="top" secondItem="pPf-yR-Bee" secondAttribute="top" constant="20" id="xxE-2C-O6x"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="thirdCell" id="2eG-yy-YzE">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
@@ -158,7 +159,7 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2eG-yy-YzE" id="fqr-km-qVq">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.3992149203" green="0.61960784310000006" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>

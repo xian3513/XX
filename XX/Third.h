@@ -10,7 +10,7 @@
 
 @interface Third : Base
 
-- (CGFloat)heightOfCell:(NSInteger *)row;
+- (CGFloat)heightOfCell:(NSInteger)row;
 
 - (NSInteger)numberOfRows;
 

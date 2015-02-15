@@ -58,7 +58,7 @@
     identifier = @"userCell";
     }
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    
+    cell.textLabel.text = [third textOfrow:indexPath.row];
     // Configure the cell...
     
     return cell;
@@ -71,7 +71,7 @@
     return indexPath;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-
+    [third recordclicked:indexPath.row];
     NSString *identifier = nil;
     switch (indexPath.row) {
             
@@ -92,8 +92,9 @@
             break;
         }
     }
-    UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:identifier];
-    [self.navigationController pushViewController:controller animated:YES];
+    [self.tableView reloadData];
+//    UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:identifier];
+//    [self.navigationController pushViewController:controller animated:YES];
 }
 /*
 // Override to support conditional editing of the table view.
