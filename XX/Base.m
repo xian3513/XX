@@ -10,5 +10,10 @@
 
 @implementation Base
 
+- (NSString *)documentPath:(NSString *)filePath {
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    return [NSString stringWithFormat:@"%@/%@",documentsDirectory,filePath];
+}
 
 @end

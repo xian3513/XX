@@ -16,6 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self initData];
+}
+
+- (void)initData {
+    selectView.layer.borderWidth = 0.4;
+    selectView.layer.borderColor = [UIColor blackColor].CGColor;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -90,4 +96,22 @@
 }
 */
 
+- (IBAction)selectPlate:(UIButton *)sender {
+    switch (sender.tag) {
+        case 1:{
+          break;
+        }
+        case 2:{
+            break;
+        }
+        case 3:{
+            break;
+        }
+        case 4:{
+            break;
+        }
+            
+          
+    }
+}
 @end

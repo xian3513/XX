@@ -80,7 +80,7 @@
             }
         }
     }
-    NSArray *arr11 = [recordClicknumber allKeysForObject:[NSNumber numberWithInt:2]];
+   // NSArray *arr11 = [recordClicknumber allKeysForObject:[NSNumber numberWithInt:2]];
     //NSLog(@"arr11:%@",arr11);
     [self reloadData:isSame data:arr];
 }

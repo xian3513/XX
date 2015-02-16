@@ -8,6 +8,7 @@
 
 #import "ThirdViewController.h"
 #import "NotepadViewController.h"
+#import "ShowViewController.h"
 #import "Third.h"
 @interface ThirdViewController ()
 
@@ -73,28 +74,37 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [third recordclicked:indexPath.row];
     NSString *identifier = nil;
+    UIViewController *controller = nil;
     switch (indexPath.row) {
             
         case 1: {
-           
-            break;
         }
             
         case 2: {
-            break;
         }
             
         case 3: {
-            break;
+            controller = [[ShowViewController alloc]init];
         }
             
         case 4: {
+            identifier = NSStringFromClass([NotepadViewController class]);
             break;
         }
     }
-    [self.tableView reloadData];
-//    UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:identifier];
-//    [self.navigationController pushViewController:controller animated:YES];
+    if(controller) {
+     [self.navigationController pushViewController:controller animated:YES];
+    } else {
+        if(identifier) {
+            controller = [self.storyboard instantiateViewControllerWithIdentifier:identifier];
+            [self.navigationController pushViewController:controller animated:YES];
+            NSLog(@"%s   controller and identifier are nil",__FUNCTION__);
+        }
+        
+        
+    }
+   
+
 }
 /*
 // Override to support conditional editing of the table view.

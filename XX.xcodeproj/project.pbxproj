@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68184E521A9180E7008F8355 /* ShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68184E511A9180E7008F8355 /* ShowViewController.m */; };
+		68184E551A9181A3008F8355 /* Show.m in Sources */ = {isa = PBXBuildFile; fileRef = 68184E541A9181A3008F8355 /* Show.m */; };
 		684464C61A8511E0005ED126 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 684464C51A8511E0005ED126 /* main.m */; };
 		684464C91A8511E0005ED126 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 684464C81A8511E0005ED126 /* AppDelegate.m */; };
 		684464CF1A8511E0005ED126 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684464CD1A8511E0005ED126 /* Main.storyboard */; };
@@ -39,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		68184E501A9180E7008F8355 /* ShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowViewController.h; sourceTree = "<group>"; };
+		68184E511A9180E7008F8355 /* ShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowViewController.m; sourceTree = "<group>"; };
+		68184E531A9181A3008F8355 /* Show.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Show.h; sourceTree = "<group>"; };
+		68184E541A9181A3008F8355 /* Show.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Show.m; sourceTree = "<group>"; };
 		684464C01A8511E0005ED126 /* XX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		684464C41A8511E0005ED126 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		684464C51A8511E0005ED126 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -185,6 +191,8 @@
 				68B9F9031A889F3B00FED450 /* Second.m */,
 				68B9F9051A889F4800FED450 /* Third.h */,
 				68B9F9061A889F4800FED450 /* Third.m */,
+				68184E531A9181A3008F8355 /* Show.h */,
+				68184E541A9181A3008F8355 /* Show.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -255,6 +263,8 @@
 		68C2817B1A90855700C26666 /* Items */ = {
 			isa = PBXGroup;
 			children = (
+				68184E501A9180E7008F8355 /* ShowViewController.h */,
+				68184E511A9180E7008F8355 /* ShowViewController.m */,
 			);
 			name = Items;
 			sourceTree = "<group>";
@@ -374,6 +384,8 @@
 				684464EE1A851461005ED126 /* ThirdViewController.m in Sources */,
 				684464C61A8511E0005ED126 /* main.m in Sources */,
 				68C281761A904E3B00C26666 /* TransactionViewController.m in Sources */,
+				68184E521A9180E7008F8355 /* ShowViewController.m in Sources */,
+				68184E551A9181A3008F8355 /* Show.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

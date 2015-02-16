@@ -11,4 +11,5 @@
 @interface FirstViewController : UIViewController<UITableViewDataSource,UITableViewDelegate> {
 IBOutlet UIView *selectView;
 }
+- (IBAction)selectPlate:(UIButton *)sender;
 @end

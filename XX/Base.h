@@ -10,4 +10,5 @@
 #import <UIKit/UIKit.h>
 @interface Base : NSObject
 //- (Base *)init:(NSInteger)count;
+- (NSString *)documentPath:(NSString *)filePath;
 @end
